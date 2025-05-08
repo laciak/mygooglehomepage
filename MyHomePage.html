@@ -6,7 +6,12 @@
         <title>My Google Homepage</title>
         <style>
             body {
-                background-color: #004d4d;
+                background-image: url("chrome_background.jpg");
+                background-color: #004d4d; /* fallback color */
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-attachment: fixed; /* keeps it in place when you scroll */
+                background-size: cover; /* scales to fill the viewport */
                 color: white;
                 font-family: Arial, sans-serif;
                 text-align: center;
@@ -14,6 +19,8 @@
             }
             h1 {
                 font-size: 3em;
+                color: aquamarine;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
             }
             .button-container {
                 margin-top: 40px;
@@ -43,24 +50,36 @@
     <body>
         <h1>Google quick links</h1>
         <div class="button-container">
-            <a href="https://www.google.com" target="_blank"
-                ><button class="btn">Google</button></a
+            <a href="https://apod.nasa.gov/apod/astropix.html" target="_blank">
+                <button class="btn">APOD</button>
+            </a>
+            <a
+                href="https://www.jasna.sk/stredisko/info-o-stredisku/webkamery"
+                target="_blank"
             >
-            <a href="https://mail.google.com" target="_blank"
-                ><button class="btn">Gmail</button></a
+                <button class="btn">Jasná</button>
+            </a>
+            <a href="https://maps.google.com" target="_blank">
+                <button class="btn">Google Maps</button>
+            </a>
+            <a href="https://mapy.com" target="_blank">
+                <button class="btn">Mapy.cz</button>
+            </a>
+            <a
+                href="https://www5.stafftrak.net/login/members/all-4t"
+                target="_blank"
             >
-            <a href="https://maps.google.com" target="_blank"
-                ><button class="btn">Mapy</button></a
+                <button class="btn">Stafftrak - Test</button>
+            </a>
+            <a
+                href="https://www5.stafftrak.net/login/members/all-4"
+                target="_blank"
             >
-            <a href="https://translate.google.as" target="_blank"
-                ><button class="btn">Prekladač</button></a
-            >
-            <a href="https://www.youtube.com" target="_blank"
-                ><button class="btn">YouTube</button></a
-            >
-            <a href="https://drive.google.com" target="_blank"
-                ><button class="btn">Disk</button></a
-            >
+                <button class="btn">Stafftrak - Production</button>
+            </a>
+            <a href="https://translate.google.as" target="_blank">
+                <button class="btn">Translator</button>
+            </a>
         </div>
     </body>
 </html>
