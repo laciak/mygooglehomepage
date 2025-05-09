@@ -45,10 +45,40 @@
             .btn:hover {
                 background-color: #009688;
             }
+
+            /* Beer-coloured gradient button */
+            .btn-beer {
+                background: linear-gradient(
+                    135deg,
+                    #f8c236 0%,
+                    /* pale gold */ #e0a800 50%,
+                    /* classic amber */ #8c5e10 100% /* deep malt brown */
+                );
+            }
+            .btn-beer:hover {
+                background: linear-gradient(
+                    135deg,
+                    #e0a800 0%,
+                    #f8c236 50%,
+                    #8c5e10 100%
+                );
+            }
+            .btn-darkblue {
+                background-color: #174a6f;
+            }
+            .btn-darkblue:hover {
+                background-color: #2472ab;
+            }
+            .btn-lightblue {
+                background-color: #2472ab;
+            }
+            .btn-lightblue:hover {
+                background-color: #329ce7;
+            }
         </style>
     </head>
     <body>
-        <h1>Google quick links</h1>
+        <h1>Quick links</h1>
         <div class="button-container">
             <a href="https://apod.nasa.gov/apod/astropix.html" target="_blank">
                 <button class="btn">APOD</button>
@@ -66,19 +96,37 @@
                 <button class="btn">Mapy.cz</button>
             </a>
             <a
+                href="https://www.pilsnerurquellpub.sk/kosice/denne-menu"
+                target="_blank"
+            >
+                <button class="btn">Translator</button>
+            </a>
+            <a href="https://translate.google.as" target="_blank">
+                <button class="btn btn-beer">Plzeňská</button>
+            </a>
+            <a href="https://chat.openai.com/chat" target="_blank">
+                <button class="btn">Chat GPT</button>
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a
                 href="https://www5.stafftrak.net/login/members/all-4t"
                 target="_blank"
             >
-                <button class="btn">Stafftrak - Test</button>
+                <button class="btn btn-lightblue">Stafftrak - Test</button>
             </a>
             <a
                 href="https://www5.stafftrak.net/login/members/all-4"
                 target="_blank"
             >
-                <button class="btn">Stafftrak - Production</button>
+                <button class="btn btn-darkblue">Stafftrak - Production</button>
             </a>
-            <a href="https://translate.google.as" target="_blank">
-                <button class="btn">Translator</button>
+            <a href="http://localhost:4200" target="_blank">
+                <button class="btn">localhost 4200</button>
+            </a>
+            <a href="https://localhost:4200" target="_blank">
+                <button class="btn">https localhost 4200</button>
             </a>
         </div>
     </body>
