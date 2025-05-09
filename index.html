@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="sk">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Google Homepage</title>
+        <style>
+            body {
+                background-image: url("chrome_background.jpg");
+                background-color: #004d4d; /* fallback color */
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-attachment: fixed; /* keeps it in place when you scroll */
+                background-size: cover; /* scales to fill the viewport */
+                color: white;
+                font-family: Arial, sans-serif;
+                text-align: center;
+                padding-top: 100px;
+            }
+            h1 {
+                font-size: 3em;
+                color: aquamarine;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            }
+            .button-container {
+                margin-top: 40px;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+            a {
+                text-decoration: none;
+            }
+            .btn {
+                background-color: #00796b;
+                border: none;
+                color: white;
+                padding: 15px 25px;
+                font-size: 1em;
+                border-radius: 10px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+            .btn:hover {
+                background-color: #009688;
+            }
+
+            /* Beer-coloured gradient button */
+            .btn-beer {
+                background: linear-gradient(
+                    135deg,
+                    #f8c236 0%,
+                    /* pale gold */ #e0a800 50%,
+                    /* classic amber */ #8c5e10 100% /* deep malt brown */
+                );
+            }
+            .btn-beer:hover {
+                background: linear-gradient(
+                    135deg,
+                    #e0a800 0%,
+                    #f8c236 50%,
+                    #8c5e10 100%
+                );
+            }
+            .btn-darkblue {
+                background-color: #174a6f;
+            }
+            .btn-darkblue:hover {
+                background-color: #2472ab;
+            }
+            .btn-lightblue {
+                background-color: #2472ab;
+            }
+            .btn-lightblue:hover {
+                background-color: #329ce7;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Quick links</h1>
+        <div class="button-container">
+            <a href="https://apod.nasa.gov/apod/astropix.html" target="_blank">
+                <button class="btn">APOD</button>
+            </a>
+            <a
+                href="https://www.jasna.sk/stredisko/info-o-stredisku/webkamery"
+                target="_blank"
+            >
+                <button class="btn">Jasná</button>
+            </a>
+            <a href="https://maps.google.com" target="_blank">
+                <button class="btn">Google Maps</button>
+            </a>
+            <a href="https://mapy.com" target="_blank">
+                <button class="btn">Mapy.cz</button>
+            </a>
+            <a
+                href="https://www.pilsnerurquellpub.sk/kosice/denne-menu"
+                target="_blank"
+            >
+                <button class="btn">Translator</button>
+            </a>
+            <a href="https://translate.google.as" target="_blank">
+                <button class="btn btn-beer">Plzeňská</button>
+            </a>
+            <a href="https://chat.openai.com/chat" target="_blank">
+                <button class="btn">Chat GPT</button>
+            </a>
+        </div>
+
+        <div class="button-container">
+            <a
+                href="https://www5.stafftrak.net/login/members/all-4t"
+                target="_blank"
+            >
+                <button class="btn btn-lightblue">Stafftrak - Test</button>
+            </a>
+            <a
+                href="https://www5.stafftrak.net/login/members/all-4"
+                target="_blank"
+            >
+                <button class="btn btn-darkblue">Stafftrak - Production</button>
+            </a>
+            <a href="http://localhost:4200" target="_blank">
+                <button class="btn">localhost 4200</button>
+            </a>
+            <a href="https://localhost:4200" target="_blank">
+                <button class="btn">https localhost 4200</button>
+            </a>
+        </div>
+    </body>
+</html>
